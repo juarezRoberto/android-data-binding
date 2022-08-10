@@ -1,20 +1,21 @@
 package com.juarez.android.databinding.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import android.widget.Toast
+import androidx.navigation.fragment.navArgs
+import com.juarez.android.databinding.BaseFragment
 import com.juarez.android.databinding.R
+import com.juarez.android.databinding.databinding.FragmentSecondBinding
 
-class SecondFragment : Fragment() {
+class SecondFragment : BaseFragment<FragmentSecondBinding>(R.layout.fragment_second) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false)
+    private val args: SecondFragmentArgs by navArgs()
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val foo = args.foo
+        val bar = args.bar
+        Toast.makeText(requireContext(), "$foo -  $bar", Toast.LENGTH_SHORT).show()
     }
-
 }

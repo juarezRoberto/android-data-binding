@@ -3,12 +3,14 @@ package com.juarez.android.databinding.notifications
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
+import android.os.Bundle
 import androidx.core.app.NotificationCompat
 import androidx.navigation.NavDeepLinkBuilder
 import com.juarez.android.databinding.R
 
 class Notification(
-    private val context: Context
+    private val context: Context,
+    private val args: Bundle
 ) {
     private val notificationManager =
         context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
@@ -28,8 +30,9 @@ class Notification(
 
     private fun createIntentPending(): PendingIntent {
         return NavDeepLinkBuilder(context)
-            .setGraph(R.navigation.main_nav_graph)
-            .setDestination(R.id.secondFragment)
+            .setGraph(R.navigation.root_nav_graph)
+            .setDestination(R.id.thirdFragment)
+            .setArguments(args)
             .createPendingIntent()
     }
 }

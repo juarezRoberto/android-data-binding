@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second_nav_graph"
+    app:startDestination="@id/thirdFragment">
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.juarez.android.databinding.fragments.ThirdFragment"
+        android:label="third Fragment">
+        <action
+            android:id="@+id/action_thirdFragment_to_third_nav_graph"
+            app:destination="@id/third_nav_graph" />
+    </fragment>
+    <include app:graph="@navigation/third_nav_graph" />
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/third_nav_graph"
+    app:startDestination="@id/fourthFragment">
+
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.juarez.android.databinding.fragments.FourthFragment"
+        android:label="fourth Fragment" />
+</navigation>
