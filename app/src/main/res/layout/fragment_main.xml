@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:context=".navigation.FirstFragment">
+
+        <Button
+            android:id="@+id/btnOpenNotification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Open notification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnOpenSecondFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Open second fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOpenFirstFragment" />
+
+        <Button
+            android:id="@+id/btnMainOpenThirdNestedGraph"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="open Third Nested Graph"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOpenSecondFragment" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Download using DownloadManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnOpenFirstFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="OPEN FIRST FRAGMENT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOpenNotification" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
