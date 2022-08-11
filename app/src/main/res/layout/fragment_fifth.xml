@@ -10,10 +10,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".navigation.rootgraph.FirstFragment">
+        tools:context=".navigation.thirdgraph.FifthFragment">
 
         <Button
-            android:id="@+id/btnFirstIncrement"
+            android:id="@+id/btnFifthIncrement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="increment"
@@ -22,13 +22,23 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtFirstValue"
+            android:id="@+id/txtFifthValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="0"
             android:textSize="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnFirstIncrement" />
+            app:layout_constraintTop_toBottomOf="@+id/btnFifthIncrement" />
+
+        <Button
+            android:id="@+id/btnFifthOpenSixthFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPEN SIXTH FRAGMENT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

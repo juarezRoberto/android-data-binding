@@ -1,4 +1,4 @@
-package com.juarez.android.databinding.navigation
+package com.juarez.android.databinding.navigation.rootgraph
 
 import android.Manifest
 import android.app.DownloadManager

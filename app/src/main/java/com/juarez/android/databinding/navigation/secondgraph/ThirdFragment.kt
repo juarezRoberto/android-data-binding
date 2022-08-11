@@ -1,4 +1,4 @@
-package com.juarez.android.databinding.navigation
+package com.juarez.android.databinding.navigation.secondgraph
 
 import android.os.Bundle
 import android.view.View
@@ -12,10 +12,9 @@ class ThirdFragment : BaseFragment<FragmentThirdBinding>(R.layout.fragment_third
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnOpenThirdNestedGraph.setOnClickListener {
-            val action = ThirdFragmentDirections.actionThirdFragmentToThirdNavGraph()
+        binding.btnThirdOpenFourthFragment.setOnClickListener {
+            val action = ThirdFragmentDirections.actionThirdFragmentToFourthFragment()
             it.findNavController().navigate(action)
         }
     }
-
 }

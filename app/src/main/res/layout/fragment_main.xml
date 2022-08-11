@@ -9,17 +9,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="8dp"
-        tools:context=".navigation.FirstFragment">
+        tools:context=".navigation.rootgraph.FirstFragment">
 
         <Button
             android:id="@+id/btnOpenNotification"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Open notification"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/btnDownload" />
 
         <Button
             android:id="@+id/btnOpenSecondFragment"
@@ -53,8 +52,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="OPEN FIRST FRAGMENT"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnOpenNotification" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

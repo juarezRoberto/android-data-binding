@@ -1,4 +1,4 @@
-package com.juarez.android.databinding.navigation
+package com.juarez.android.databinding.navigation.secondgraph
 
 import com.juarez.android.databinding.R
 import com.juarez.android.databinding.databinding.FragmentFourthBinding
