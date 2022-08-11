@@ -53,6 +53,11 @@ class MainFragment : BaseFragment<FragmentMainBinding>(R.layout.fragment_main) {
             it.findNavController().navigate(action)
         }
 
+        binding.btnOpenDialog.setOnClickListener {
+            val action = MainFragmentDirections.actionMainFragmentToMyDialog()
+            it.findNavController().navigate(action)
+        }
+
         binding.btnDownload.setOnClickListener {
             requestPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) {
                 when (it) {

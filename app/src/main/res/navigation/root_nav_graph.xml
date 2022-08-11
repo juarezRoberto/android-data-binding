@@ -47,6 +47,14 @@
         <action
             android:id="@+id/action_mainFragment_to_third_nav_graph"
             app:destination="@id/third_nav_graph" />
+        <action
+            android:id="@+id/action_mainFragment_to_myDialog"
+            app:destination="@id/myDialog" />
     </fragment>
+    <dialog
+        android:id="@+id/myDialog"
+        android:name="com.juarez.android.databinding.navigation.rootgraph.MyDialog"
+        android:label="MyDialog"
+        tools:layout="@layout/my_dialog" />
 
 </navigation>
