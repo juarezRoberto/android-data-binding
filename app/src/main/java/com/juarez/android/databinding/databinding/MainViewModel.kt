@@ -1,4 +1,4 @@
-package com.juarez.android.databinding
+package com.juarez.android.databinding.databinding
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

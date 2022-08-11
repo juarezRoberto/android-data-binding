@@ -1,4 +1,4 @@
-package com.juarez.android.databinding
+package com.juarez.android.databinding.databinding
 
 data class Item(
     val id: Int,

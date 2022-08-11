@@ -1,11 +1,10 @@
-package com.juarez.android.databinding
+package com.juarez.android.databinding.databinding
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.juarez.android.databinding.databinding.ItemRecyclerBinding
 
 class ItemAdapter : ListAdapter<Item, ItemAdapter.ViewHolder>(DiffCallback) {
 

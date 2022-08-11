@@ -1,4 +1,4 @@
-package com.juarez.android.databinding
+package com.juarez.android.databinding.databinding
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.juarez.android.databinding.databinding.ActivityMainBinding
+import com.juarez.android.databinding.R
 
 class MainActivity : AppCompatActivity() {
 

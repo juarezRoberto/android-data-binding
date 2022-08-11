@@ -1,11 +1,11 @@
-package com.juarez.android.databinding.fragments
+package com.juarez.android.databinding.navigation
 
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.findNavController
-import com.juarez.android.databinding.BaseFragment
 import com.juarez.android.databinding.R
 import com.juarez.android.databinding.databinding.FragmentThirdBinding
+import com.juarez.android.databinding.utils.BaseFragment
 
 class ThirdFragment : BaseFragment<FragmentThirdBinding>(R.layout.fragment_third) {
 

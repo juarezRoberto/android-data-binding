@@ -1,4 +1,4 @@
-package com.juarez.android.databinding
+package com.juarez.android.databinding.databinding
 
 import android.view.View
 import androidx.databinding.BindingAdapter

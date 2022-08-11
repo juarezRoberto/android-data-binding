@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/fourthFragment"
-        android:name="com.juarez.android.databinding.fragments.FourthFragment"
+        android:name="com.juarez.android.databinding.navigation.FourthFragment"
         android:label="fourth Fragment" />
 </navigation>

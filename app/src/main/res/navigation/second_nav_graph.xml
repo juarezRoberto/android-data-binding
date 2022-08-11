@@ -5,7 +5,7 @@
     app:startDestination="@id/thirdFragment">
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.juarez.android.databinding.fragments.ThirdFragment"
+        android:name="com.juarez.android.databinding.navigation.ThirdFragment"
         android:label="third Fragment">
         <action
             android:id="@+id/action_thirdFragment_to_third_nav_graph"

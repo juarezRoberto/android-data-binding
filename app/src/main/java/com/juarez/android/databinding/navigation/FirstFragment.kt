@@ -1,4 +1,4 @@
-package com.juarez.android.databinding.fragments
+package com.juarez.android.databinding.navigation
 
 import android.Manifest
 import android.app.DownloadManager
@@ -13,10 +13,10 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
-import com.juarez.android.databinding.BaseFragment
 import com.juarez.android.databinding.R
 import com.juarez.android.databinding.databinding.FragmentFirstBinding
 import com.juarez.android.databinding.notifications.Notification
+import com.juarez.android.databinding.utils.BaseFragment
 import com.juarez.android.databinding.utils.Downloader
 import com.juarez.android.databinding.utils.PermissionResult
 import com.juarez.android.databinding.utils.requestPermission

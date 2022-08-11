@@ -1,4 +1,4 @@
-package com.juarez.android.databinding
+package com.juarez.android.databinding.utils
 
 import android.os.Bundle
 import android.view.LayoutInflater

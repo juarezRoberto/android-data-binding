@@ -1,12 +1,12 @@
-package com.juarez.android.databinding.fragments
+package com.juarez.android.databinding.navigation
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.navigation.fragment.navArgs
-import com.juarez.android.databinding.BaseFragment
 import com.juarez.android.databinding.R
 import com.juarez.android.databinding.databinding.FragmentSecondBinding
+import com.juarez.android.databinding.utils.BaseFragment
 
 class SecondFragment : BaseFragment<FragmentSecondBinding>(R.layout.fragment_second) {
 
